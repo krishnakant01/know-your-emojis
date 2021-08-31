@@ -1,0 +1,9 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.input-box {
+  padding: 1rem;
+  width: 60%;
+  margin: auto;
+}
