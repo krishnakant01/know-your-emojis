@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 
 var emojiDictionary = {
+  "😉": "winking",
   "😊": "smiling",
   "😳": "disbelief",
   "😔": "sad",
@@ -9,8 +10,13 @@ var emojiDictionary = {
   "❤️": "love",
   "😑": "annoyance",
   "😂": "laughing with tears of joy",
+  "🤣": "rolling on the floor laughing",
   "🥺": "pleading face",
   "😭": "crying",
+  "😰": "anxious",
+  "😪": "sleepy",
+  "😙": "kissing face",
+  "🐱": "cat face",
   "🔥": "fire"
 };
 
