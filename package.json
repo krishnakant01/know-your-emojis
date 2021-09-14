@@ -1,7 +1,7 @@
 {
   "name": "know-your-emojis",
   "version": "1.0.0",
-  "description": "",
+  "description": "emoji interpreter",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

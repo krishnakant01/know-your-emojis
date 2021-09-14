@@ -9,15 +9,69 @@ var emojiDictionary = {
   "🥡": "takeout box",
   "❤️": "love",
   "😑": "annoyance",
+  "🤔": "confused",
+  "🤮": "puke",
+  "🥱": "bored",
+  "🤡": "clown",
+  "😋": "yummy",
+  "🥰": "smiling face with hearts",
   "😂": "laughing with tears of joy",
   "🤣": "rolling on the floor laughing",
   "🥺": "pleading face",
+  "😵‍": "confused and exhausted",
   "😭": "crying",
   "😰": "anxious",
   "😪": "sleepy",
   "😙": "kissing face",
+  "🤩": "star struck",
+  "😘": "face blowing a kiss",
+  "😜": "wink face with tongue",
+  "🤪": "zany face",
+  "😝": "laughing with tongue",
+  "🤗": "hugging face",
+  "🤐": "zipped/shut face",
+  "🤫": "shushing face",
+  "🤭": "smiling with habd over mouth",
+  "🤑": "money minded face",
+  "🤨": "suspicious",
+  "😐": "expressionless face",
+  "🙄": "eye rolling face",
+  "😒": "unamused face",
+  "😬": "grimacing face",
+  "🤥": "lying face",
+  "😶": "face without mouth",
+  "😌": "calm face",
+  "🤤": "drooling face",
+  "😴": "sleepy face",
+  "😷": "face with mask",
+  "🤒": "face with thermometer",
+  "🤕": "head bandage",
+  "🤢": "nauseated",
+  "🤧": "sneezing",
+  "🥵": "hot face",
+  "🥶": "cold face",
+  "🥴": "woozy face",
+  "🤯": "head exploding",
+  "🥳": "partying face",
+  "😎": "smiling with sunglasses",
+  "🤓": "nerd face",
+  "🤬": "abusing face",
+  "😠": "angry face",
+  "😫": "irritated face",
+  "😡": "red hot angry face",
+  "🤠": "cowboy hat face",
+  "😲": "ashtonished",
+  "🐭": "mouse face",
+  "🐷": "pig face",
+  "🦁": "lion face",
+  "🐯": "tiger face",
+  "🐶": "dog face",
   "🐱": "cat face",
-  "🔥": "fire"
+  "🔥": "fire",
+  "💛": "yellow heart",
+  "💚": "green heart",
+  "💙": "blue heart",
+  "💜": "purple heart"
 };
 
 var emojisWeKnow = Object.keys(emojiDictionary);
@@ -53,17 +107,19 @@ export default function App() {
       <h2>{meaning}</h2>
 
       <h3> emojis we know </h3>
-      {emojisWeKnow.map(function (emoji) {
-        return (
-          <span
-            onClick={() => emojiClickHandler(emoji)}
-            style={{ fontSize: "2rem", padding: "0.5rem", cursor: "pointer" }}
-            key={emoji}
-          >
-            {emoji}
-          </span>
-        );
-      })}
+      <div style={{ width: "70%", margin: "auto", padding: "1rem" }}>
+        {emojisWeKnow.map(function (emoji) {
+          return (
+            <span
+              className="emoji-span"
+              onClick={() => emojiClickHandler(emoji)}
+              key={emoji}
+            >
+              {emoji}
+            </span>
+          );
+        })}
+      </div>
     </div>
   );
 }
